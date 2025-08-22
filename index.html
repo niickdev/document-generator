@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- FORM SECTION -->
+        <div class="form-container">
+            <h1>Document Generator</h1>
+            <p>Enter details below to see them update live on the card.</p>
+            
+            <form id="generator-form">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" value="John" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" value="Wick" required>
+                </div>
+                 <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="text" id="dob" value="1980.02.02" required>
+                </div>
+                <div class="form-group">
+                    <label for="docNumber">Document Number</label>
+                    <input type="text" id="docNumber" value="62.803.876" required>
+                </div>
+                <div class="form-group">
+                    <label for="issueDate">Issue Date</label>
+                    <input type="text" id="issueDate" value="2015.01.01">
+                </div>
+                 <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" id="expiryDate" value="2025.01.01">
+                </div>
+
+                <button type="submit" id="download-btn">DOWNLOAD CARD</button>
+            </form>
+        </div>
+
+        <!-- OUTPUT SECTION -->
+        <div class="output-container">
+            <h2>Generated ID Card</h2>
+            <canvas id="result-canvas" width="856" height="540"></canvas>
+            <p class="disclaimer">Disclaimer: This is for educational purposes only. Do not use for illegal activities.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
